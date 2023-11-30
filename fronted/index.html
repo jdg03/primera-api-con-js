@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API JS</title>
+</head>
+<body>
+
+  <h1>API Client</h1>
+
+  <h4 for="newProduct">Obtener todos los productos</h4><br>
+  <button onclick="getProducts()">Obtener todos los productos</button>
+  <br> <br>
+
+  
+  <h4 for="newProduct">Obtener Producto por id</h4>
+  <label for="productId">ID del Producto:</label>
+  <input type="text" id="productId" placeholder="Ingrese el ID del producto"><br>
+  <button onclick="getProductById()">Obtener Producto por ID</button>
+  <br> <br>
+
+  <h4 for="newProduct">Crear Nuevo Producto</h4>
+    <label for="newProductDescription">-Descripción del Nuevo Producto:</label>
+    <input type="text" id="newProductDescription" placeholder="Ingrese la descripción del nuevo producto"><br>
+    <label for="newProductPrice">-Precio del Nuevo Producto:</label>
+    <input type="text" id="newProductPrice" placeholder="Ingrese el precio del nuevo producto"><br>
+    <label for="newProductStock">-Stock del Nuevo Producto:</label>
+    <input type="text" id="newProductStock" placeholder="Ingrese el stock del nuevo producto"><br>
+    <button onclick="createProduct()">Crear Nuevo Producto</button>
+  <br> <br>
+
+  <h4 for="newProduct">Actualizar Producto</h4>
+    <label for="productIdUpdate">-id del Producto a Actualizar:</label>
+    <input type="text" id="productIdUpdate" placeholder="Ingrese el ID del producto a actualizar"><br>
+    <label for="updatedProductDescription">-Nueva Descripción del Producto:</label>
+    <input type="text" id="updatedProductDescription" placeholder="Ingrese la nueva descripción del producto"><br>
+    <label for="updatedProductPrice">-Nuevo Precio del Producto:</label>
+    <input type="text" id="updatedProductPrice" placeholder="Ingrese el nuevo precio del producto"><br>
+    <label for="updatedProductStock">-Nuevo Stock del Producto:</label>
+    <input type="text" id="updatedProductStock" placeholder="Ingrese el nuevo stock del producto"><br>
+    <button onclick="updateProductById()">Actualizar Producto por ID</button>
+  <br> <br>
+
+  <h4 for="newProduct">Eliminar Producto</h4>
+  <label for="deleteProductById">Producto a eliminar:</label>
+  <input type="text" id="productIdToDelete" placeholder="Ingrese el ID del producto a eliminar"><br>
+  <button onclick="deleteProductById()">Eliminar Producto por ID</button>
+  
+  <script src="assets/js/controlador.js"></script>
+ 
+
+</body>
+</html>
+
+    
+</body>
+</html>
